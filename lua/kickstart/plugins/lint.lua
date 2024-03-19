@@ -3,14 +3,15 @@
 vim.pack.add { 'https://github.com/mfussenegger/nvim-lint' }
 
 local lint = require 'lint'
-lint.linters_by_ft = {
-  markdown = { 'markdownlint' }, -- Make sure to install `markdownlint` via mason / npm
-}
+--lint.linters_by_ft = {
+--  markdown = { 'markdownlint' }, -- Make sure to install `markdownlint` via mason / npm
+--}
 
 -- To allow other plugins to add linters to require('lint').linters_by_ft,
 -- instead set linters_by_ft like this:
--- lint.linters_by_ft = lint.linters_by_ft or {}
--- lint.linters_by_ft['markdown'] = { 'markdownlint' }
+lint.linters_by_ft = lint.linters_by_ft or {}
+lint.linters_by_ft['markdown'] = { 'markdownlint' }
+lint.linters_by_ft['python'] = { 'ruff' }
 --
 -- However, note that this will enable a set of default linters,
 -- which will cause errors unless these tools are available:
