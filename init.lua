@@ -99,7 +99,7 @@ do
   vim.g.maplocalleader = ' '
 
   -- Set to true if you have a Nerd Font installed and selected in the terminal
-  vim.g.have_nerd_font = false
+  vim.g.have_nerd_font = true
   -- this is needed for nvim-tree
   -- disable netrw at the very start of your init.lua
   vim.g.loaded_netrw = 1
