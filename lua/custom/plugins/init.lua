@@ -11,10 +11,3 @@ for file_name, type in vim.fs.dir(plugins_dir, { follow = true }) do
     require('custom.plugins.' .. module)
   end
 end
--- FIXME check if these still need to be loaded manually
---return {
--- Git related plugins
---  'tpope/vim-fugitive',
---  'tpope/vim-rhubarb',
---  'mfussenegger/nvim-ansible',
---}
